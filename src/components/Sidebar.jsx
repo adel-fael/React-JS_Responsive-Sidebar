@@ -31,7 +31,7 @@ const Sidebar = ({ open, setOpen, selected, setSelected }) => {
             !open && 'scale-0'
           }`}
         >
-          Designer👇🏼
+          Designer😎
         </h1>
       </div>
       <ul className="pt-6">
