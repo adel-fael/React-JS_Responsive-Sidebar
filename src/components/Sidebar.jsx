@@ -1,4 +1,4 @@
-//! note: if you wanna test it locally change the src of the images
+//! note: pay attention to the src of the images the solution is like this project put them in a public folder
 
 
 
