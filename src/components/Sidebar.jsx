@@ -1,13 +1,13 @@
 const Sidebar = ({ open, setOpen, selected, setSelected }) => {
   const Menus = [
-    { title: 'Dashboard', src: '../../public/Chart_fill' },
-    { title: 'Inbox', src: '../../public/Chat' },
-    { title: 'Accounts', src: '../../public/User', gap: true },
-    { title: 'Schedule ', src: '../../public/Calendar' },
-    { title: 'Search', src: '../../public/Search' },
-    { title: 'Analytics', src: '../../public/Chart' },
-    { title: 'Files ', src: '../../public/Folder', gap: true },
-    { title: 'Setting', src: '../../public/Setting' },
+    { title: 'Dashboard', src: './Chart_fill' },
+    { title: 'Inbox', src: './Chat' },
+    { title: 'Accounts', src: './User', gap: true },
+    { title: 'Schedule ', src: './Calendar' },
+    { title: 'Search', src: './Search' },
+    { title: 'Analytics', src: './Chart' },
+    { title: 'Files ', src: './Folder', gap: true },
+    { title: 'Setting', src: './Setting' },
   ]
   return (
     <div
@@ -16,14 +16,14 @@ const Sidebar = ({ open, setOpen, selected, setSelected }) => {
       } bg-dark-purple h-screen p-5  pt-8 relative duration-300`}
     >
       <img
-        src="../../public/control.png"
+        src="./control.png"
         className={`absolute cursor-pointer -right-3 top-9 w-7 border-dark-purple
        border-2 rounded-full  ${!open && 'rotate-180'}`}
         onClick={() => setOpen((prevOpen) => !prevOpen)}
       />
       <div className="flex gap-x-4 items-center">
         <img
-          src="../../public/logo.png"
+          src="./logo.png"
           className={`cursor-pointer duration-500 ${open && 'rotate-[360deg]'}`}
         />
         <h1
@@ -44,7 +44,7 @@ const Sidebar = ({ open, setOpen, selected, setSelected }) => {
             } `}
             onClick={() => setSelected(index)}
           >
-            <img src={`./src/assets/${Menu.src}.png`} />
+            <img src={`./${Menu.src}.png`} />
             <span className={`${!open && 'hidden'} origin-left duration-200`}>
               {Menu.title}
             </span>
