@@ -1,3 +1,7 @@
+//! note: if you wanna test it locally change the src of the images
+
+
+
 const Sidebar = ({ open, setOpen, selected, setSelected }) => {
   const Menus = [
     { title: 'Dashboard', src: './Chart_fill' },
@@ -31,7 +35,7 @@ const Sidebar = ({ open, setOpen, selected, setSelected }) => {
             !open && 'scale-0'
           }`}
         >
-          Designer😎
+          Designer
         </h1>
       </div>
       <ul className="pt-6">
